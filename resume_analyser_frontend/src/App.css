@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Modern font for clarity */
+  background-color: black; /* Fixed typo: Changed "blck" to "black" */
+  color: #333; /* Text color */
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Home Page Styling */
+.home-container {
+  padding: 50px;
+  background-image: url('C:\Users\Sumit Vaidya\Desktop\Resume_Ranker\resume_analyser-main\resume_analyser-main\resume_analyser_frontend\public\images\background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px; /* Add margin for better spacing */
+}
+
+.role-box {
+  background-color: rgba(248, 249, 250, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.role-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Elevated shadow on hover */
+}
+
+.role-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.6rem; /* Larger font size for better readability */
+}
+
+/* Set Student and Manager text to black */
+.student-box h3, 
+.manager-box h3 {
+  color: black; /* Text color set to black */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
+.role-button {
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.role-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Role Message Styling */
+.role-message {
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  max-width: 90%;
+}
+
+/* Student Page Styles */
+.student-page, .manager-page {
+  text-align: center;
+  padding: 20px;
+  background-image: url('C:\Users\Sumit Vaidya\Desktop\Resume_Ranker\resume_analyser-main\resume_analyser-main\resume_analyser_frontend\public\images\background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.student-page h2, .manager-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.upload-section,
+.analyze-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 45%;
+}
+
+.upload-section input[type="file"],
+.analyze-section textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.upload-section button,
+.analyze-section button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-section button:hover,
+.analyze-section button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Results Section */
+.results-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.results-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.results-section div {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.results-section p {
+  font-size: 1.3rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upload-section,
+  .analyze-section {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .results-section {
+    width: 100%;
+  }
+
+  .role-selection {
+    flex-direction: column;
+  }
+
+  .role-box {
+    width: 100%;
+  }
+}
